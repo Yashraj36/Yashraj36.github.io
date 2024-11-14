@@ -1,164 +1,57 @@
-/* Reset some basic styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 /* Home Section */
 .home {
-  height: 100vh;
+  height: 100vh; /* Full viewport height */
   background-color: #333;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; /* Stack elements vertically */
   text-align: center;
   padding: 20px;
+}
+
+.home .intro {
+  max-width: 700px; /* Ensure content doesn’t stretch too far */
+  margin-bottom: 20px; /* Add some space between text and button */
+}
+
+.home h1 {
+  font-size: 3rem; /* Make the title bigger */
+  margin-bottom: 10px;
+}
+
+.home p {
+  font-size: 1.2rem; /* Adjust text size for readability */
+  margin-bottom: 20px;
 }
 
 .home .cta {
   background-color: #f39c12;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 25px;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 20px;
+  font-size: 1.1rem; /* Make the button text slightly bigger */
+  margin-top: 20px; /* Add some spacing from the paragraph above */
+  transition: background-color 0.3s ease;
 }
 
 .home .cta:hover {
-  background-color: #e67e22;
+  background-color: #e67e22; /* Slightly darker on hover */
 }
 
-/* About Section */
-.about {
-  background-color: white;
-  padding: 60px 0;
-}
+/* Optional: Adding more space and spacing adjustments for smaller screens */
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 2.5rem;
+  }
 
-.about h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
+  .home p {
+    font-size: 1rem;
+  }
 
-.about-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.profile-img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  margin-right: 40px;
-}
-
-.about-text {
-  max-width: 600px;
-}
-
-.about-text h3 {
-  margin-top: 20px;
-  font-size: 1.5rem;
-}
-
-ul {
-  list-style-type: none;
-}
-
-ul li {
-  margin: 5px 0;
-}
-
-/* Experience Section */
-.experience {
-  background-color: #f9f9f9;
-  padding: 60px 0;
-}
-
-.experience h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-
-.experience-item {
-  margin-bottom: 40px;
-}
-
-.experience-item h3 {
-  font-size: 1.8rem;
-}
-
-.experience-item ul {
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
-.experience-item p {
-  font-style: italic;
-}
-
-/* Contact Section */
-.contact {
-  background-color: white;
-  padding: 60px 0;
-}
-
-.contact h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.contact input, .contact textarea {
-  width: 100%;
-  padding: 15px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-.contact button {
-  background-color: #f39c12;
-  color: white;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.contact button:hover {
-  background-color: #e67e22;
-}
-
-/* Footer Section */
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
+  .home .cta {
+    padding: 10px 20px;
+  }
 }
