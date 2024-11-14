@@ -11,6 +11,7 @@
   padding: 20px;
 }
 
+
 .home .intro {
   max-width: 700px; /* Ensure content doesn’t stretch too far */
   margin-bottom: 20px; /* Add some space between text and button */
@@ -39,6 +40,21 @@
 
 .home .cta:hover {
   background-color: #e67e22; /* Slightly darker on hover */
+}
+
+.image-container {
+  width: 100%;          /* Width of the image-container */
+  height: 300px;        /* Set the height of the container */
+  display: flex;        /* Center content horizontally and vertically */
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; /* Light background to see the container */
+}
+
+ /* Make the image scale relative to the image-container */
+ .profile-img {
+   max-width: 100%;      /* Ensure the image doesn't overflow the container */
+   height: auto;         /* Maintain aspect ratio */
 }
 
 /* Optional: Adding more space and spacing adjustments for smaller screens */
