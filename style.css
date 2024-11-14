@@ -12,7 +12,7 @@
 }
 
 .home .intro {
-  max-width: 700px; /* Ensure content doesn’t stretch too far */
+  max-width: 100%; /* Ensure content doesn’t stretch too far */
   margin-bottom: 20px; /* Add some space between text and button */
 }
 
@@ -33,6 +33,7 @@
   text-decoration: none;
   border-radius: 5px;
   font-size: 1.1rem; /* Make the button text slightly bigger */
+  font-weight: bold;
   margin-top: 20px; /* Add some spacing from the paragraph above */
   transition: background-color 0.3s ease;
 }
@@ -54,7 +55,6 @@
   display: flex;        /* Center content horizontally and vertically */
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0; /* Light background to see the container */
 }
 
  /* Make the image scale relative to the image-container */
