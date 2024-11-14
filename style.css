@@ -11,7 +11,6 @@
   padding: 20px;
 }
 
-
 .home .intro {
   max-width: 700px; /* Ensure content doesn’t stretch too far */
   margin-bottom: 20px; /* Add some space between text and button */
@@ -40,6 +39,14 @@
 
 .home .cta:hover {
   background-color: #e67e22; /* Slightly darker on hover */
+}
+
+.home .about-content {
+  padding: 12px 0px 12px 0px;
+}
+
+.home .about-content .about-text{
+  padding: 30px 0px 0px 30px;
 }
 
 .image-container {
