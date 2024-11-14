@@ -42,7 +42,7 @@
   background-color: #e67e22; /* Slightly darker on hover */
 }
 
-.home .about-content {
+.home .row.about-content {
   padding: 12px 0px 12px 0px;
 }
 
