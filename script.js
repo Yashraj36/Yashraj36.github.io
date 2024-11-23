@@ -41,4 +41,3 @@ document.getElementById("contact-form").addEventListener("submit", function(even
     alert("Please fill out all fields.");
   }
 });
-
